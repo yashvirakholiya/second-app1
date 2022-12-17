@@ -11,7 +11,7 @@ import img5 from './images/carousel-5.jpg'; */
 function Carousal (){
     const [sliders,setSliders] = useState([])
     useEffect(()=>{
-        fetch("http://localhost/phpdemo/get_slider.php")
+        fetch("https://yashvicdmi.000webhostapp.com/get_slider.php")
             .then(res => res.json())
             .then(
                 (result) => {
