@@ -1,0 +1,61 @@
+.pro_img{
+    position: relative;
+
+}
+.img{
+    scale: 0.9;
+
+}
+.pro_img:hover .img{
+    scale: 1;
+    object-fit: cover;
+    overflow: hidden;
+    height: 100%;
+    visibility: visible;
+}
+.pro_img:hover .icon li{
+    z-index: 1;
+    color: black;
+    margin: 5px;
+    visibility: visible;
+    
+}
+.pro_img:hover .layer{
+    visibility: visible;
+}
+.icon :hover{
+    color: #FFD333;
+    background-color: #3D464D;
+    z-index: 3;
+}
+.layer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #F5F5F5;
+    opacity: 0.5;
+    object-fit: cover;
+    overflow: hidden;
+    visibility: hidden;
+}
+.layer ul{
+    list-style: none;
+}
+.icon{
+    display: flex;
+    align-items: center;
+    top: 40%;
+    left: 15%;
+    position: absolute;
+    
+}
+.icon li{
+    color: black;
+    border: 1px solid black;
+    padding: 5px;
+    background-color: transparent;
+    
+
+}
